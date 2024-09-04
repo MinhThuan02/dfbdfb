@@ -1735,3 +1735,50 @@ body{
     background: #1c293c;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 430px){
+    #header .logo{
+     width: 50px;
+     
+    }
+    #header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px 10px;
+   background-color:#0B1320;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+    #navbar {
+        width: 200px;
+    }
+   }
+   @media (min-width: 360px){
+    .logo{
+     width: 50px;
+     
+    }
+    #header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px 10px;
+   background-color:#0B1320;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+   }
