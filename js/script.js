@@ -22,4 +22,69 @@ function changeImg() {
   setTimeout("changeImg()", 3000);
 }
 window.onload = changeImg;  
+<<<<<<< HEAD
+=======
+// JavaScript to toggle accordion panels
+document.querySelectorAll('.accordion').forEach(button => {
+  button.addEventListener('click', function() {
+      const panel = this.nextElementSibling;
+      if (panel.style.display === 'block') {
+          panel.style.display = 'none';
+      } else {
+          document.querySelectorAll('.panel').forEach(p => p.style.display = 'none');
+          panel.style.display = 'block';
+      }
+  });
+});
+
+// JavaScript to toggle active state for filter buttons
+document.querySelectorAll('.discount-btn, .price-btn, .size-btn').forEach(button => {
+  button.addEventListener('click', function() {
+      document.querySelectorAll('.discount-btn, .price-btn, .size-btn').forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+  });
+});
+function increaseQuantity() {
+  const quantityInput = document.getElementById('quantity');
+  let quantity = parseInt(quantityInput.value);
+  quantity++;
+  quantityInput.value = quantity;
+  updateTotal();
+}
+
+function decreaseQuantity() {
+  const quantityInput = document.getElementById('quantity');
+  let quantity = parseInt(quantityInput.value);
+  if (quantity > 1) {
+      quantity--;
+      quantityInput.value = quantity;
+      updateTotal();
+  }
+}
+
+function updateTotal() {
+  const price = 20; // Giá sản phẩm
+  const quantity = parseInt(document.getElementById('quantity').value);
+  const total = price * quantity;
+  document.getElementById('total').textContent = `$${total}`;
+}
+
+function removeItem() {
+  const cartItem = document.querySelector('.cart-item');
+  cartItem.remove();
+  document.getElementById('total').textContent = '$0';
+}
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Xử lý xác thực đăng nhập
+  if (email && password) {
+      alert('Đăng nhập thành công!');
+  } else {
+      alert('Vui lòng nhập đầy đủ thông tin.');
+  }
+});
+>>>>>>> 0e676b0 (first commit)
 

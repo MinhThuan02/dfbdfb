@@ -1,0 +1,131 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Định hướng cột để chứa header và nội dung */
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header chứa logo */
+.login-header {
+    width: 93%;
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex; /* Sử dụng Flexbox để căn chỉnh logo */
+    justify-content: flex-start; /* Căn logo về phía trái */
+    padding-left: 100px; /* Khoảng cách lề trái cho logo */
+}
+
+.logo img {
+    max-width: 100px; /* Kích thước tối đa cho logo */
+}
+
+/* Container chính của trang đăng nhập */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 20px; /* Khoảng cách từ header đến container đăng nhập */
+}
+
+.login-box {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    padding: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #1c293c; /* Màu chính */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 92%;
+    padding: 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #1c293c; /* Màu chữ */
+    margin-bottom: 5px;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #1c293c; /* Màu chính */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #16202f; /* Màu tối hơn cho hiệu ứng hover */
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background-color: #f5f5f5;
+    color: #1c293c; /* Màu chính */
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #e0e0e0;
+}
